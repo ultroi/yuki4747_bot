@@ -989,9 +989,6 @@ app.add_handler(CommandHandler("play2", play_game))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 application.add_handler(CommandHandler('info', info))
 application.add_handler(CommandHandler('rankings', rankings))
-
-
-
 application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, log_chat))
 application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, scythe_fact))
 application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, harsha_fact))
